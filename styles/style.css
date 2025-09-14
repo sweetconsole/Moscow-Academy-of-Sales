@@ -383,30 +383,98 @@ a, button {
 	text-align: center;
 	line-height: 100%;
 	letter-spacing: 0.02em;
+	margin-bottom: 50px;
 }
 
 .problems_solving_list {
 	width: 100%;
 	height: 265px;
+	position: relative;
 	background-repeat: no-repeat;
+	background-position: center;
 	background-image: url("../images/problems_solving_line.svg");
 }
 
+.problems_solving_item:nth-child(1) {
+	top: 15px;
+	left: -25px;
+}
+
+.problems_solving_item:nth-child(2) {
+	top: 160px;
+	left: 150px;
+}
+
+.problems_solving_item:nth-child(3) {
+	top: 50px;
+	left: 330px;
+}
+
+.problems_solving_item:nth-child(4) {
+	top: 150px;
+	left: 485px;
+}
+
+.problems_solving_item:nth-child(5) {
+	top: 8px;
+	right: 510px;
+}
+
+.problems_solving_item:nth-child(6) {
+	top: 150px;
+	right: 340px;
+}
+
+.problems_solving_item:nth-child(7) {
+	top: 7px;
+	right: 150px;
+}
+
+
+.problems_solving_item:nth-child(8) {
+	top: 190px;
+	right: -50px;
+}
+
 .problems_solving_item {
-
+	width: 125px;
+	height: 125px;
+	background-color: white;
+	position: absolute;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 13px 21px 28px 0px rgba(51, 52, 53, 0.25);
 }
 
-.problems_solving_item:nth-child(odd) {
-	background-color: blue;
+.problems_solving_dark_blue {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	position: absolute;
+	background: conic-gradient(#29A8DF 20%, transparent 0);
+	transform: rotate(180deg);
 }
 
-.problems_solving_item:nth-child(even) {
-	background-color: red;
+.problems_solving_light_blue {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	position: absolute;
+	background: conic-gradient(#e5f5fb 20%, transparent 0);
+	transform: rotate(252deg);
 }
-
 
 .problems_solving_container {
-
+	width: 109px;
+	height: 109px;
+	position: absolute;
+	background-color: white;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .problems_solving_icon {
@@ -414,7 +482,24 @@ a, button {
 }
 
 .problems_solving_item_text {
+	width: 190px;
+	text-align: center;
+	color: #262626;
+	font-family: "Inter", sans-serif;
+	font-size: 22px;
+	line-height: 110%;
+	position: absolute;
+	bottom: -60px;
+	transform-origin: top left;
+}
 
+.problems_solving_item_text_3_lines {
+	bottom: -80px;
+}
+
+.problems_solving_item_large_text {
+	width: 266px;
+	bottom: -80px;
 }
 
 
@@ -727,12 +812,18 @@ a, button {
 .features_list {
 	list-style: none;
 	display: grid;
+	position: relative;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 31px;
 }
 
+.feature_blue_square {
+	position: absolute;
+	top: 92px;
+	left: -71px;
+}
+
 .feature {
-	background-color: white;
 	width: 300px;
 	height: 520px;
 	perspective: 1000px;
